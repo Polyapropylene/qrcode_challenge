@@ -2,18 +2,19 @@ body {
     background-color: #d5e1ef;
     display: flex;
     justify-content: center;
+    align-items: center;
+    /*width: 100vw;*/
+    height: 100vh;
 }
 
 .panel {
-    position: absolute;
     width: 320px;
     height: 500px;
     background-color: white;
     border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    top: 50%;
-    transform: translate(0, -50%);
+    Display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .qrcode {
@@ -21,5 +22,29 @@ body {
     height: 290px;
     border-radius: 20px;
     object-fit: contain;
+    margin-top: 15px;
+}
+
+img {
+    width: inherit;
+    border-radius: inherit;
+    position: inherit;
+}
+
+.upper {
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    font-size: 23px;
+    color: #142134;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.lower {
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    font-size: 15px;
+    color: #9b9faa;
+    font-weight: lighter;
     margin-top: 15px;
 }
